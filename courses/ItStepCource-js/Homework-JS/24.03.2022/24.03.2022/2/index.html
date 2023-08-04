@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>input</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="inputs">
+                <h2 class="title">Inputs</h2>
+                <form>
+                    <label>
+                        <input type="text" id="neutral" placeholder="Enter some text">
+                        <input type="text" id="valid" placeholder="valid text">
+                        <input type="text" id="invalid" placeholder="invalid text">
+                    </label>
+                </form>
+            </div>
+            <div class="check">
+                <h2 class="title">Check boxes</h2>
+                <form>
+                    <div class="on">
+                        <label class="switch">
+                            <input type="checkbox" id="on">
+                            <span class="slider slider-on"></span>
+                        </label>
+                        <label for="on">Subcribe</label>
+                    </div>
+                    <div class="off">
+                        <label class="switch">
+                            <input type="checkbox" id="off">
+                            <span class="slider slider-off"></span>
+                        </label>
+                        <label for="off">Subcribe</label>
+                    </div>
+                </form>
+            </div>
+            <div class="radio">
+                <h2 class="title">Radio buttons</h2>
+                <form>
+                    <label for="human" class="human">Gender:</label>
+                        <input type="radio" id="male">
+                        <span>Male</span>
+                    <label for="female" class="female" id="human">
+                        <input type="radio" id="female">
+                        <span>Female</span>
+                    </label>
+                </form>
+            </div>
+            <div class="buttons">
+                <h2 class="title">Buttons</h2>
+                <form>
+                    <input type="button" value="Acitve" id="green">
+                    <input type="button" value="Hover" id="green-hover">
+                    <input type="button" value="Danger" id="red">
+                    <input type="button" value="Hover" id="red-hover">
+                    <input type="button" value="Disabled" id="gray">
+                    <input type="button" value="+" id="round-green">
+                    <input type="button" value="-" id="round-red">
+                </form>
+            </div>
+            <div class="text">
+                <h2 class="title">Text area</h2>
+                <form>
+                    <input type="text" id="text-area" placeholder="Enter some text...">
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>

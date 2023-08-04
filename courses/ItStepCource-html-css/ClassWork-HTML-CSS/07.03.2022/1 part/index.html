@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>forms</title>
+</head>
+<body>
+    
+    <form action="" method="">
+       <div>
+            <label for="UserLogin">Логин: </label>
+            <input type="text" placeholder="Введите логин" name = "login" id="UserLogin">
+       </div>
+
+        <div>
+            <label for="UserPass">Пароль: </label>
+            <input type="password" placeholder="Введите пароль" name = "pass" id="UserPass">  
+        </div>  
+
+        <div>
+            <label for="email">Почта: </label>
+            <input type="email" placeholder="Введите почту" name="email" id="UserEmail">
+        </div>
+
+        <div>
+            <label for="redColor">Красный</label>
+            <input type="checkbox" name="red" id="redColor">
+        
+            <label for="greenColor">Зеленый</label>
+            <input type="checkbox" name="green" id="greenColor">
+
+            <label for="blueColor">Синий</label>
+            <input type="checkbox" name="blue" id="blueColor">
+        </div>
+
+        <div>
+            <label for="bmw">BMW</label>
+            <input type="radio" name="carSelect" id="bmw">
+
+            <label for="mers">Mers</label>
+            <input type="radio" name="carSelect" id="mers">
+
+            <label for="bmw">Tesla</label>
+            <input type="radio" name="carSelect" id="tesla">
+        </div>
+
+        <div>
+            <select name="" id="">
+                <option value="">Фантастика</option>
+                <option value="">Ужасы</option>
+                <option value="">ОНЯМЕЕЕЕЕЕ</option>
+                <option value="">Боевик</option>
+                <option value="">Мелодраммы</option>
+                <option value="">Триллер</option>
+            </select>
+
+            <div>
+                <input type="range" min="0" max="100" value="0">
+            </div>
+
+            <div>
+                <input type="color" id="colorInput">
+            </div>
+
+            <div>
+                <textarea name="" id="text" placeholder="Введите какой-то текст"></textarea>
+                <button type="button" id="btn">Отправить</button>
+                <button type="button" id="clearBTN">[&times;]</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.heart img {
+    transition: .5s; 
+    display: block; 
+}
+.heart img:hover {
+    transform: scale(2);
+}

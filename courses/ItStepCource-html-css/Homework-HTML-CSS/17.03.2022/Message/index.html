@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Message</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="title">Contact form</h1>
+            <span class="subtitle">Please fill in your information and we'll be sending your order</span>
+            <form>
+                <ul class="list">
+                    <li class="item-1 item">
+                        <label for="fullname">Your name</label>
+                        <div class="fullname">
+                            <input type="text" id="fullname" name="firstName" placeholder="first name">
+                            <input type="text" id="fullname" name="lastName" placeholder="last name">
+                        </div>
+                    </li>
+                    <li class="item-2 item">
+                        <label for="email">Your email</label>
+                        <input type="email" id="email" name="eMail" placeholder="your_mail@mail.com">
+                    </li>
+                    <li class="item-3 item">
+                        <label for="phone">Phone*</label>
+                        <div class="number">
+                            <input type="text" id="phone" name="Phone" placeholder="000">
+                            <input type="text" id="phone" name="Phone" placeholder="000">
+                            <input type="text" id="phone" name="Phone" placeholder="000">
+                        </div>
+                    </li>
+                    <li class="item-4 item">
+                        <label for="subject">Message subject*</label>
+                        <select name="Subject" id="subject">
+                            <option>Other</option>
+                        </select>
+                    </li>
+                    <li class="item-5 item">
+                        <span class="message-txt">Message*</span>
+                        <fieldset id="txt"></fieldset>
+                    </li>
+                    <li class="item-6 item">
+                        <input type="submit" id="submit" value="SUBMIT FORM">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

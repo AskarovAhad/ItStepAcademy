@@ -1,0 +1,26 @@
+.body{
+    font-family: sans-serif;
+}
+h1{
+    text-align:center;
+}
+h2{
+    text-align:center;
+}
+.part{
+    color: red;
+}
+code{
+    white-space: pre-wrap;
+}
+.code-example{
+    background-color: rgba(128, 128, 128, 0.356);
+}
+.part-2{
+    color: aqua;
+    background-color: rgba(128, 128, 128, 0.288);
+    font-size: 16px;
+    padding: 4px 8px;
+    margin: 2px;
+    border: 4px;
+}

@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*отключил скрол, но оставил возможность прокрутки*/
+::-webkit-scrollbar { 
+    display: none; 
+}
+body{
+    background-color: rgba(177, 174, 174, 0.116);
+    font-family: 'Roboto', 'Segoe UI';
+    background-color: rgb(255, 255, 255);
+}
+header{
+    display: flex;
+    height: 100px;
+    background-color: rgba(0, 153, 255, 0.486);
+    align-items: center;
+}
+.header__title{
+    font-weight: 900;
+    font-size: 60px;
+}
+.resultArea ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.resultArea li{
+    display: flex;
+    list-style: none;
+    background-color: gray;
+    color: white;
+    width: 400px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+.resultArea li:hover{
+    border: 2px solid rgb(56, 54, 54);
+    color: black;
+    font-weight: 700;
+    width: 420px;
+    height: 50px;
+    transition: .3s;
+}
+
+.searchArea{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search_title{
+    font-size: 35px;
+}
+
+#inp{
+    margin-top: 15px;
+    width: 500px;
+    height: 35px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+.search_btn{   
+    position: absolute;
+    border: 0;
+    width: 100px;
+    height: 40px;
+    margin-top: 57px;
+    margin-left: 450px;
+    font-size: 34px;
+    background-color:rgba(240, 248, 255, 0);
+}
+.search_btn{
+    cursor:crosshair;
+}
+
+/*верстска карточек*/
+.card-thunderstorm,
+.card-drizzle,
+.card-rain,
+.card-snow,
+.card-mist,
+.card-dust,
+.card-squal,
+.card-tornado,
+.card-clear,
+.card-clouds,
+.card-ash
+{
+    background-size: cover;
+    border-radius: 20px;
+    height: 300px;
+    width: 500px;
+    
+}
+.card-thunderstorm{
+    background-image: url("weather_gif/rainwiththunder.gif");
+}
+.card-drizzle{
+    background-image: url("weather_gif/drizzle.gif");
+}
+.card-rain{
+    background-image: url("weather_gif/rain_and_squal.gif");
+}
+.card-snow{
+    background-image: url("weather_gif/snow.gif");
+    filter: grayscale(0.5); 
+}
+.mist-card{
+    background-image: url("weather_gif/mist.jpg");
+}
+.card-dust{
+    background-image: url("weather_gif/dust.jpg");
+}
+.card-squal{
+    background-image: url("weather_gif/rain_and_squal.gif");
+}
+.card-tornado{
+    background-image: url("weather_gif/tornado.jpg");
+}
+.card-clear{
+    background-image: url("weather_gif/clear.jpg");
+    
+}
+.card-clouds{
+    background-image: url("weather_gif/clouds.jpg");
+}
+.card-ash{
+    background-color: rgba(75, 75, 75, 0.541);
+}
+
+
+.cards{
+    display: flex;
+    
+    justify-content: center;
+}
+.main-card{
+    margin-top: 100px;
+    height: 300px;;
+    height: 300px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    animation: .8s main-card-animation ease;
+}
+@keyframes main-card-animation {
+    from { 
+        margin-right: 700px;
+        opacity: 0; 
+        width: 250px;
+    }
+    to { 
+        margin-right: 0;
+        width: 500px;
+        opacity: 1; 
+    }
+}
+.card-header{
+    display: flex;
+    margin-left: 45px;
+    margin-top: 28px;
+}
+
+.card-city-name{
+    min-width: 210px;
+    max-width: 210px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.692);
+}
+.card-currtime{
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.452);
+}
+
+
+.currtemp-and-icon{
+    display: flex;
+    flex-direction: row;
+    margin-left: 45px;
+    margin-top: 15px;
+}
+.curr-temp{
+    font-size: 45px;
+    color: white;
+    font-weight: 500;
+}
+.curr-weather-icon{
+    font-size: 50px;
+    color: rgba(245, 245, 245, 0.815);
+    min-width: 118px;
+}
+
+
+.card-weather-status-and-tempfill{
+    display: flex;
+    flex-direction: column;
+}
+.weather-status, .feels-like{
+    color: rgba(245, 245, 245, 0.815);
+    font-weight: 600;
+    font-size: 20px;
+}
+.feels-like-txt{
+    font-weight: 400;
+}
+.feels-like-tmp{
+    color: white;
+}
+
+.card-add-info{
+    display: flex;
+    flex-direction: row;
+    margin-left: 45px;
+    margin-top: 15px;
+}
+.card-wind-icon-info,
+.card-humidity-icon-info{
+    font-weight: 500;
+    font-size: 25px;
+    color: rgba(245, 245, 245, 0.911);
+    min-width: 175px;
+    max-width: 175px;
+    max-height: 30px;
+}
+.card-humidity-icon-info{
+    margin-left: 30px;
+}
+
+.sunrice-suset{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sunset-icon,.sunrice-icon{
+    width: 40px;
+}
+.sunrice-icon-time,
+.sunset-icon-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding: 5px;
+    color: white;
+}
+
+
+/*карточка с погодой на 5 дней вперед*/
+.five-day-cards{
+    display: flex;
+    flex: row;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.five-day-card{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px black solid; */
+    align-items: center;
+    justify-content: center;
+    max-width: 110px;
+    min-width: 110px;
+    min-height: 170px;
+    margin-left: 5px;
+    animation: 1.3s five-day-card-animation ease;
+    transition: .5s;
+    border-radius: 15px;
+}
+.five-day-card:hover{
+    border-radius: 15px;
+    border: 1px rgba(0, 0, 0, 0.185) solid;
+    box-shadow: 0px 5px 100px -11px rgba(34, 60, 80, 0.4);
+    transition: .5s;
+}
+@keyframes five-day-card-animation {
+    from { 
+        opacity: 0;
+        margin-right: 500px;
+    }
+    to { 
+        opacity: 1;
+        margin-right: 0px;
+    }
+}
+
+.five-day-card:first-child(){
+    margin-left: 0;
+}
+.five-day-date{
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.five-day-day{
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.459);
+}
+.five-day-icon{
+    margin-top: 5px;
+    font-size: 40px;
+}
+.five-day-daytemp,
+.five-day-nighttemp{
+    margin-left: 10px;
+}
+.five-day-desc{
+    margin-top: 5px;
+    font-size: 14px;
+}

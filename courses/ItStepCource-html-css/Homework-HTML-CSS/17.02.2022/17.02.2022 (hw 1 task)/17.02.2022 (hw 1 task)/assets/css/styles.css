@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+ol{
+    padding: 15px;
+    background-color: rgb(237,158,174);
+    list-style-position: inside;
+}
+ol li{
+    background-color: rgb(198,99,118);
+    margin-bottom: 15px;
+    color: white;
+    padding: 8px 13px;
+}
+ol li:last-child{
+    margin: 0;
+}
+ol li span{
+    background-color: rgb(159,53,74);
+    padding: 8px;
+    margin-left: 5px;
+}

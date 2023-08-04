@@ -1,0 +1,29 @@
+body{
+    background-color: rgba(219, 217, 217, 0.548);
+    font-family: sans-serif;
+}
+h1{
+    color: purple;
+    text-align: center;
+   
+}
+.paragraph{
+    color: rgb(97, 128, 143);
+    
+}
+
+.letter-letter{
+    margin-top: -20px;
+    font-size: 17px;
+    white-space:pre-line;
+}
+
+.letter-scene1{
+    font-size: 17px;
+    font-style: italic;
+}
+
+.greg-samp-letter{
+    font-size: 17px;
+}
+

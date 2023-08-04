@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    font-weight: 700;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: rgb(187, 255, 0);
+    padding: 25px 40px;
+    margin-bottom: 20px;
+}
+
+.menu{
+    margin-bottom: 20px;
+}
+
+.footer, .menu{
+    background-color: rgb(0, 204, 255);
+    padding: 25px 40px;
+}
+
+.aside1, .aside2, .aside3, .center-content{
+    background-color: rgb(43, 255, 0);
+    padding: 25px 40px;
+}
+
+main{
+    margin-bottom: 20px;
+}
+
+.content{
+    margin: 0 -10px;
+    display: flex;
+}
+
+.left-column{
+    flex-basis: 20%;
+}
+.right-column{
+    flex-basis: 10%;
+}
+.center-column{
+    flex-grow: 1;
+}
+.content div[class$="-column"]{
+    padding: 0 10px;
+}
+
+.aside1{
+    margin-bottom: 20px;
+    height: 100px;
+}
+.aside2{
+    height: 150px;
+    margin-bottom: 20px;
+}
+.aside3{
+    text-orientation:upright;
+    writing-mode: vertical-lr;
+    letter-spacing: 3px;
+}
+.section{
+    background-color: rgb(183, 107, 233);
+    height: 150px;
+    margin-bottom: 20px;
+    padding: 25px 40px;
+
+}
+
+

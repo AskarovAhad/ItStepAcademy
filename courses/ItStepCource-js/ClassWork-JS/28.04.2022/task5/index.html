@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5task 28.04.2022</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            position: relative;
+        }
+        .searcharea{
+            width: 350px;
+            margin: 0 auto;
+        }
+        .resultarea{
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 350px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .resultarea ul li{
+            background-color: rgb(162,176,255);
+            color: white;
+            font-weight: 800;
+            border: 1px solid black;
+            transition: .2s;
+        }
+        .resultarea ul li:hover{
+            background-color: rgb(143, 159, 253);
+        }
+        .input{
+            height: 30px;
+            padding: 3px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="searcharea">
+            <input type="text" id="inp">
+        </div>
+        <div class="resultarea"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

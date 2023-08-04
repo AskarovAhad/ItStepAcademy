@@ -1,0 +1,72 @@
+*{ /*обращение ко всем тегам*/
+    margin: 0;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    line-height: 1.6;
+}
+
+.code-exapmle{
+    white-space:pre-wrap;
+    color: brown;
+    background-color:rgb(218, 204, 204);
+}
+
+abbr{
+    text-decoration: none;
+    color: yellow;
+}
+
+.text1{
+    color: red;
+    font-size: 1.2rem;
+}
+
+.bold{
+    font-size: 900;
+}
+
+.square{
+    background-color: tomato;
+    box-sizing: border-box; /*для того чтобы избежать конфликта в размерах margin padding border*/
+    width: 400px;
+    /*height: 100px;
+    overflow: auto;*/
+    margin: 100px 0 50px 120px; /*сверху по-бокам снизу следующее значение по часовой*/
+    padding: 20px;/*отступ текста или картинки изнутри*/
+    border: 10px solid Purple;
+    border-radius: 20px;  /*скругление*/
+    transition: all 0.5s ;   /*cubic-bezier*/
+}
+
+.square:hover p{
+    color: white;
+    transition: color 0.5s;
+}
+
+.square:hover{
+    box-shadow: 1px 1px 10px 1px coral;
+    /* background-color: rgb(255, 237, 71); */
+    border-radius: 45px;
+    transition: all 0.5s;
+}
+
+/*
+::-webkit-scrollbar{
+    background-color: black;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyt6kkxjy_ENeof15CtnDrhTNn_V8Wyn8qPg&usqp=CAU");
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(214, 54, 54, 0.486);
+    border-radius: 20px;
+}
+*/
+

@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin-top: 100px;
+    font-family: sans-serif;
+    background-image: url(../img/bcc.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    display: flex;
+    width: 700px;
+    padding: 50px;
+    flex-direction: column;
+    box-shadow: 0 0 40px 10px black;
+    color: white;
+}
+input,
+select{
+    border: 0;
+    height: 25px;
+}
+input::placeholder{
+    padding-left: 20px;
+    color: lightgray;
+}
+.title{
+    padding-bottom: 25px;
+}
+.subtitle{
+    padding-bottom: 25px;
+    font-size: small;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+#fullname{
+    width: 213px;
+}
+#fullname:first-child{
+    margin-right: 10px;
+}
+#email{
+    width: 440px;
+}
+#phone:nth-child(1),
+#phone:nth-child(2){
+    width: 121px;
+    margin-right: 10px;
+}
+#subject{
+    width: 440px;
+}
+#txt{
+    width: 440px;
+    height: 120px;
+    background-color: white;
+    border: 0;
+}
+.item-5{
+    border-bottom: 1px solid white;
+}
+.item-6{
+    margin-top: 15px;
+    justify-content: flex-end;
+}
+#submit{
+    width: 440px;
+    height: 30px;
+    background: none;
+    border: 3px solid white;
+    color: white;
+}

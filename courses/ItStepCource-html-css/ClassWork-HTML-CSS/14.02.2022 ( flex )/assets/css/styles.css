@@ -1,0 +1,39 @@
+*,
+::after,
+::before{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
+
+.flex-container{
+    border: 2px solid black;
+    height: 600px;
+    display:flex;
+    justify-content: flex-start;  /*выравнивает по горизонтали*/
+    align-items: flex-start;    /*выравнивает по вертикали*/
+    flex-wrap: wrap;   /*чтобы элементы падали вниз*/
+    align-content: flex-start;  /*чтобы елементы падали вниз без пробеллов я расстояния*/
+    flex-direction: column; /*расположение контента*/
+}
+
+.flex-elem{
+    padding: 50px;
+    font-size: 4rem;
+    color: white;
+    font-weight: 900;
+}
+.flex-elem:nth-child(1){
+    background-color: rgb(101,52,146);
+}
+.flex-elem:nth-child(2){
+    background-color: rgb(250,130,100);
+}
+.flex-elem:nth-child(3){
+    background-color: rgb(12, 224, 161);
+}
+.flex-elem:nth-child(4){
+    background-color: rgb(214, 238, 2);
+}

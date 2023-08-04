@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+ul{
+    list-style-type:none; /*меняет стиль маркировок*/
+    list-style-position: outside; /*указать где будут располагаться точки*/
+
+    /* list-style-image:url("../img/019-spotify.svg"); */
+}
+ ul li{
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;   
+
+ }
+ul li::before{  /*что-то до li*/
+    content: "";
+    display: flex;
+    width: 16px;
+    height: 16px;
+    align-items: center; /*выравние по вертикали*/
+    justify-content: center; /*выравнивание по горизонтали*/
+    background-image: url("../img/021-snapchat.svg");
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    /* vertical-align: middle; */
+}
+
+
+/*для нумерации №) или по-другому*/
+ol{
+    list-style-type:none ;
+    counter-reset: number;
+}
+ol li::before{
+    content: counter(number) ')';
+    counter-increment: number;
+}

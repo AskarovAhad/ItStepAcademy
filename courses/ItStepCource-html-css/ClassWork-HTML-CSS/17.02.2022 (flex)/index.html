@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>flex2</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- блок -->
+        <div class="header__wrapper" id="sideMenu">
+            <!-- элемент блока -->
+            <!-- нужен чтобы дать фон -->
+
+            <div class="header__container container">
+                <div class="header__content">
+                    <!-- расположить в ряд навигацию -->
+                    <a href="" class="header__logo logo">Logo</a>
+                    <nav class="header__menu ">
+                        <ul class="header__list">
+                            <li class="header__item"><a href="" class="header__link"> Категории</a></li>
+                            <li class="header__item"><a href="" class="header__link"> О Нас</a></li>
+                            <li class="header__item"><a href="" class="header__link"> Контакты</a></li>
+                            <li class="header__item"><a href="" class="header__link"> Справка</a></li>
+                            <li class="header__item"><a href="" class="header__link"> Новости</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__sign">
+                        <a href="" class="header__signin">Войти</a>
+                        <a href="" class="header__signup">Зарегаться</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <button type="button" class="header__button" id="burger"><i class="fa-solid fa-bars"></i></button>
+    </header>
+
+    <script>
+        const sideMenu = document.querySelector('#sideMenu');
+        const burger = document.querySelector('#burger');
+        burger.onclick = () => sideMenu.classList.toggle('active');
+
+    </script>
+
+    <main>
+        <section class="shop">
+            <div class="shop__container container">
+                <div class="shop__cards">
+                    <div class="shop__item">
+                        <div class="shop__content">
+                            <div class="shop__image"><img src="assets/img/imgg.jpg" alt="" class="shop-img"></div>
+                            <div class="shop__info">
+                                <h3 class="shop__title">Book</h3>
+                                <p class="shop__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
+                                    perferendis!
+                                </p>
+                                <button class="shop__btn"> </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop__item">
+                        <div class="shop__content">
+                            <div class="shop__image"><img src="assets/img/imgg.jpg" alt="" class="shop-img"></div>
+                            <div class="shop__info">
+                                <h3 class="shop__title">Book</h3>
+                                <p class="shop__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
+                                    perferendis!
+                                </p>
+                                <button class="shop__btn"> </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop__item">
+                        <div class="shop__content">
+                            <div class="shop__image"><img src="assets/img/imgg.jpg" alt="" class="shop-img"></div>
+                            <div class="shop__info">
+                                <h3 class="shop__title">Book</h3>
+                                <p class="shop__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
+                                    perferendis!
+                                </p>
+                                <button class="shop__btn"> </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop__item">
+                        <div class="shop__content">
+                            <div class="shop__image"><img src="assets/img/imgg.jpg" alt="" class="shop-img"></div>
+                            <div class="shop__info">
+                                <h3 class="shop__title">Book</h3>
+                                <p class="shop__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
+                                    perferendis!
+                                </p>
+                                <button class="shop__btn"> </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop__item">
+                        <div class="shop__content">
+                            <div class="shop__image"><img src="assets/img/imgg.jpg" alt="" class="shop-img"></div>
+                            <div class="shop__info">
+                                <h3 class="shop__title">Book</h3>
+                                <p class="shop__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
+                                    perferendis!
+                                </p>
+                                <button class="shop__btn"> </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop__item">
+                        <div class="shop__content">
+                            <div class="shop__image"><img src="assets/img/imgg.jpg" alt="" class="shop-img"></div>
+                            <div class="shop__info">
+                                <h3 class="shop__title">Book</h3>
+                                <p class="shop__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
+                                    perferendis!
+                                </p>
+                                <button class="shop__btn"> </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop__item">
+                        <div class="shop__content">
+                            <div class="shop__image"><img src="assets/img/imgg.jpg" alt="" class="shop-img"></div>
+                            <div class="shop__info">
+                                <h3 class="shop__title">Book</h3>
+                                <p class="shop__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
+                                    perferendis!
+                                </p>
+                                <button class="shop__btn"> </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop__item">
+                        <div class="shop__content">
+                            <div class="shop__image"><img src="assets/img/imgg.jpg" alt="" class="shop-img"></div>
+                            <div class="shop__info">
+                                <h3 class="shop__title">Book</h3>
+                                <p class="shop__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad,
+                                    perferendis!
+                                </p>
+                                <button class="shop__btn"> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

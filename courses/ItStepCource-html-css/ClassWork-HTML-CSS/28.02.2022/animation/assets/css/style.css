@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+.block{
+    /* width: 400px;
+    height: 400px;
+    background-color:aquamarine;
+    box-shadow: 10px 10px 20px 0 rgba(0,0,0,.6);
+    animation: move 1s steps(360) infinite alternate; */
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%, -50%);
+    animation: move 1s steps(360) infinite normal;
+}
+
+
+
+@keyframes move {
+    /* from{
+        transform: scale(1);
+        border-radius: 1000px;
+        background-color: black;
+    }
+    to{
+        transform: scale(1);
+        border-radius: 50px;
+        background-color: cadetblue;
+    } */
+    
+    0%{
+        background-color: transparent;
+        box-shadow: none;
+    }
+    25%{
+        background-color: transparent;
+        box-shadow: 80px 0 0 0 black;
+    }
+    50%{
+        background-color: transparent;
+        box-shadow: 80px 80px 0 0 black;
+    }
+    75%{
+        background-color: transparent;
+        box-shadow: 0 80px 0 0 black;
+    }
+    100%{
+        box-shadow: transparent;
+        background-color: 0 0 0 0 black;
+        
+    }
+}

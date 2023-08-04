@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>flight</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__content content">
+                <div class="header__title">Flights - Search List</div>
+                <nav class="header__nav">
+                    <ul class="header__list list">
+                        <li class="header__item"><a class="header__link" href="">Home</a></li>
+                        <li class="header__item"><a class="header__link" href="">Flights Search List</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__container container">
+            <div class="main__content content">
+                <section class="main__form">
+                    <form>
+                        <div class="first-row">
+                            <ul class="first-row__list list">
+                                <li class="first-row__item-1">
+                                    <label>
+                                        <input type="radio" name="oneWay" id="one-way">
+                                        <span class="oneway">One Way</span>
+                                    </label>
+                                </li>
+                                <li class="first-row__item-2">
+                                    <label>
+                                        <input type="radio" name="roundTrip" id="round-trip">
+                                        <span class="roundtrip">Round Trip</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="second-row">
+                            <ul class="second-row__list list">
+                                <li class="second-row__item-1 item">
+                                    <input type="text" name="From" id="from" placeholder="From">
+                                </li>
+                                <li class="second-row__item-2 item">
+                                    <input type="text" name="To" id="to" placeholder="To">
+                                </li>
+                                <li class="second-row__item-3 item">
+                                    <input type="date" name="departDate" id="depart" value="Depart Date">
+                                </li>
+                                <li class="second-row__item-4 item">
+                                    <input type="date" name="returnDate" id="return" placeholder="Return Date">
+                                </li>
+                                <li class="second-row__item-5 item">
+                                    <select name="class" id="class">
+                                        <option>Economy class</option>
+                                        <option>Business class</option>
+                                    </select>
+                                </li>
+                                <li class="second-row__item-6 item">
+                                    <input type="submit" id="submit" value="Search">
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </section>
+                <section class="main__center">
+                    <div class="main__filter">
+                        <h3 class="main__title-1">Filter</h3>
+                        <div class="main__left">
+                            <h4 class="main__subtitle-1 subtitle">No. of Stops</h4>
+                            <form>
+                                <ul class="main__num-of-stops__list list">
+                                    <li class="main__num-of-stops__item-1 item">
+                                        <label>
+                                            <input type="radio" name="noStop" id="no-stop">
+                                            <span class="nonstop">Non Stop</span>
+                                        </label>
+                                    </li>
+                                    <li class="main__num-of-stops__item-2 item">
+                                        <label>
+                                            <input type="radio" name="oneStop" id="one-stop">
+                                            <span class="onestop">1 Stop</span>
+                                        </label>
+                                    </li>
+                                    <li class="main__num-of-stops__item-3 item">
+                                        <label>
+                                            <input type="radio" name="twoStop" id="two-stop">
+                                            <span class="twostop">2+ Stops</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </form>
+                            <h4 class="main__subtitle-2 subtitle">Price</h4>
+                            <form>
+                                <ul class="main__list-price list">
+                                    <li class="main__list-price__item-1 item">
+                                        <p class="txt">Min</p>
+                                        <label>
+                                            <input type="number" name="min" id="min">
+                                            <span class="desc">$</span>
+                                        </label>
+                                    </li>
+                                    <li class="main__list-price__item-1 item">
+                                        <p class="txt">Max</p>
+                                        <label>
+                                            <input type="number" name="max" id="max">
+                                            <span class="desc">$</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </form>
+                            <h4 class="h4 main__subtitle-3 subtitle">Airlines</h4>
+                            <form>
+                                <ul class="main__list-airlines list">
+                                    <li class="main__list-airlines__item-1 item">
+                                        <label>
+                                            <input type="radio" name="asiana" id="asiana">
+                                            <span class="asiana">Asiana Airlines</span>
+                                        </label>
+                                    </li>
+                                    <li class="main__list-airlines__item-2 item">
+                                        <label>
+                                            <input type="radio" name="american" id="american">
+                                            <span class="american">American Airlines</span>
+                                        </label>
+                                    </li>
+                                    <li class="main__list-airlines__item-3 item">
+                                        <label>
+                                            <input type="radio" name="canada" id="canada">
+                                            <span class="canada">Air Canada</span>
+                                        </label>
+                                    </li>
+                                    <li class="main__list-airlines__item-4 item">
+                                        <label>
+                                            <input type="radio" name="india" id="india">
+                                            <span class="india">Air india</span>
+                                        </label>
+                                    </li>
+                                    <li class="main__list-airlines__item-5 item">
+                                        <label>
+                                            <input type="radio" name="jet" id="jet">
+                                            <span class="jet">Jet Airways</span>
+                                        </label>
+                                    </li>
+                                    <li class="main__list-airlines__item-6 item">
+                                        <label>
+                                            <input type="radio" name="spicejet" id="spicejet">
+                                            <span class="spicejet">Spicejet</span>
+                                        </label>
+                                    </li>
+                                    <li class="main__list-airlines__item-7 item">
+                                        <label>
+                                            <input type="radio" name="indigo" id="indigo">
+                                            <span class="indigo">IndoGo</span>
+                                        </label>
+                                    </li>
+                                    <li class="main__list-airlines__item-8 item">
+                                        <label>
+                                            <input type="radio" name="multiple" id="multiple">
+                                            <span class="multiple">Multiple Airlines</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="main__flights">
+                        <h3 class="main__title-2">Dehli to Sydney</h3>
+                        <div class="main__right">
+                            <ul class="main__list-desc list">
+                                <li class="main__list-desc__item-1 desc__item">
+                                    <ul class="list__gray">
+                                        <li>
+                                            <h5 class="subtitle">Airlines</h5>
+                                        </li>
+                                        <li>
+                                            <h5 class="subtitle">Departure</h5>
+                                        </li>
+                                        <li>
+                                            <h5 class="subtitle">Duration</h5>
+                                        </li>
+                                        <li>
+                                            <h5 class="subtitle">Arrival</h5>
+                                        </li>
+                                        <li>
+                                            <h5 class="subtitle">Price</h5>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="main__list-desc__item-2 desc__item">
+                                    <ul class="list__white">
+                                        <li>
+                                            <p>IndiGo</p><span>6E-2489</span>
+                                        </li>
+                                        <li>
+                                            <p>23:30</p><span>Dehli</span>
+                                        </li>
+                                        <li>
+                                            <p>18h 55m</p><span>Non Stop</span>
+                                        </li>
+                                        <li>
+                                            <p>18:15</p><span>Sydney;980</span>
+                                        </li>
+                                        <li>
+                                            <p>$980</p>
+                                        </li>
+                                        <li>
+                                            <label><input type="button" value="Book" id="book"></label><a href="" class="button__link">Flight details</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="list__white">
+                                        <li>
+                                            <p>IndiGo</p><span>6E-2489</span>
+                                        </li>
+                                        <li>
+                                            <p>23:30</p><span>Dehli</span>
+                                        </li>
+                                        <li>
+                                            <p>18h 55m</p><span>Non Stop</span>
+                                        </li>
+                                        <li>
+                                            <p>18:15</p><span>Sydney;980</span>
+                                        </li>
+                                        <li>
+                                            <p>$980</p>
+                                        </li>
+                                        <li>
+                                            <label><input type="button" value="Book" id="book"></label><a href="" class="button__link">Flight details</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="list__white">
+                                        <li>
+                                            <p>IndiGo</p><span>6E-2489</span>
+                                        </li>
+                                        <li>
+                                            <p>23:30</p><span>Dehli</span>
+                                        </li>
+                                        <li>
+                                            <p>18h 55m</p><span>Non Stop</span>
+                                        </li>
+                                        <li>
+                                            <p>18:15</p><span>Sydney;980</span>
+                                        </li>
+                                        <li>
+                                            <p>$980</p>
+                                        </li>
+                                        <li>
+                                            <label><input type="button" value="Book" id="book"></label><a href="" class="button__link">Flight details</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="list__white">
+                                        <li>
+                                            <p>IndiGo</p><span>6E-2489</span>
+                                        </li>
+                                        <li>
+                                            <p>23:30</p><span>Dehli</span>
+                                        </li>
+                                        <li>
+                                            <p>18h 55m</p><span>Non Stop</span>
+                                        </li>
+                                        <li>
+                                            <p>18:15</p><span>Sydney;980</span>
+                                        </li>
+                                        <li>
+                                            <p>$980</p>
+                                        </li>
+                                        <li>
+                                            <label><input type="button" value="Book" id="book"></label><a href="" class="button__link">Flight details</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="list__white">
+                                        <li>
+                                            <p>IndiGo</p><span>6E-2489</span>
+                                        </li>
+                                        <li>
+                                            <p>23:30</p><span>Dehli</span>
+                                        </li>
+                                        <li>
+                                            <p>18h 55m</p><span>Non Stop</span>
+                                        </li>
+                                        <li>
+                                            <p>18:15</p><span>Sydney;980</span>
+                                        </li>
+                                        <li>
+                                            <p>$980</p>
+                                        </li>
+                                        <li>
+                                            <label><input type="button" value="Book" id="book"></label><a href="" class="button__link">Flight details</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="list__white">
+                                        <li>
+                                            <p>IndiGo</p><span>6E-2489</span>
+                                        </li>
+                                        <li>
+                                            <p>23:30</p><span>Dehli</span>
+                                        </li>
+                                        <li>
+                                            <p>18h 55m</p><span>Non Stop</span>
+                                        </li>
+                                        <li>
+                                            <p>18:15</p><span>Sydney;980</span>
+                                        </li>
+                                        <li>
+                                            <p>$980</p>
+                                        </li>
+                                        <li>
+                                            <label><input type="button" value="Book" id="book"></label><a href="" class="button__link">Flight details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

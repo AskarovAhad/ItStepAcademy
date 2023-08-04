@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    color: white;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+        "header header header header"
+        "hero hero hero hero"
+        "aside main main main"
+        "footer footer footer footer"
+    ;
+
+}
+
+.header{
+    background-color: orange;
+    grid-area: header;
+}
+.hero{
+    background-color: cyan;
+    color: black;
+    grid-area: hero;
+}
+.aside{
+    background-color: darkgray;
+    grid-area: aside;
+}
+.content{
+    background-color: yellow;
+    grid-area: main;
+}
+.footer{
+    background-color: red;
+    grid-area: footer;
+}

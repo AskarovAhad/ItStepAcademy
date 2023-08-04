@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Montserrat:ital,wght@0,400;0,700;1,900&family=Roboto:wght@400;500;900&family=Supermercado+One&display=swap'); 
+ 
+*{ 
+    box-sizing: border-box; 
+    margin: 0; 
+} 
+:root{ 
+    /*colors*/ 
+    --text-color: rgba(80, 95, 152, 1); 
+    --heading-color: rgba(9, 17, 51, 1); 
+    --btn-color:rgba(17, 27, 71, 1); 
+ 
+    /*font-size*/ 
+    --heading-size: 50px; 
+    --subheading-size: 18px; 
+    --section-header-size: 36px; 
+    --main-size: 16px; 
+    --card-size: 12px;  
+    --link-size: 14px; 
+ 
+    /*font-weight*/ 
+    --medium-weight: 500; 
+    --regular-weight: 400; 
+ 
+    /*font-family*/ 
+    --main-font: 'Roboto', sans-serif; 
+    /*container*/ 
+    --container-width: 1110px; 
+} 
+ 
+body{ 
+    font-family: var(--main-font);     
+    overflow-x: hidden; 
+} 
+ 
+ul{ 
+    list-style: none; 
+    padding: 0; 
+} 
+ 
+a{text-decoration: none;} 
+ 
+h1, h2, h3{ 
+    color: var(--heading-color); 
+} 
+p{ 
+    color: var(--text-color); 
+} 
+.container{ 
+    max-width: calc(var(--container-width) + 30px); 
+    width: 100%; 
+    padding: 0 15px; 
+    margin: 0 auto; 
+} 
+.header__body{ 
+    min-height: 60px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: relative; 
+} 
+.menu__list{ 
+    display: flex; 
+} 
+.menu__item{ 
+    margin-right: 60px; 
+} 
+.menu__item:last-child{ 
+    margin-right: 0; 
+} 
+.menu__link{ 
+    display: block; 
+    color: var(--var(--text-color)); 
+    font-size: var(--link-size); 
+    position: relative; 
+} 
+.menu__link::after{ 
+    content:""; 
+    display: block; 
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    top: 100%; 
+    width: 0; 
+    height: 2px; 
+    border-radius: 50px; 
+    background-color: var(--heading-color); 
+    transition: .4s; 
+} 
+.menu__link:hover::after{ 
+    width: 100%; 
+} 
+.header__logo{ 
+    font-size: 26px; 
+    font-weight: 900; 
+    color: rgba(55, 68, 126, 1); 
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+} 
+.header__action-btn{ 
+    width: 160px; 
+} 
+.btn{ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;    border: 2px solid var(--btn-color); 
+    color: var(--text-color); 
+    border-radius: 2px; 
+    font-weight: var(--medium-weight); 
+    line-height: 18px; 
+    padding: 4px ; 
+    flex-wrap: nowrap; 
+} 
+.btn_fill{ 
+    background-color: var(--btn-color); 
+    color: white; 
+} 
+.hero{ 
+    padding: 300px 0 385px 0; 
+} 
+.hero-bg{ 
+    width: 100%; 
+} 
+.hero-bg svg{ 
+    width: 115vw; 
+    height: 115vh; 
+    position:absolute; 
+    right: -25vw; 
+    top: 0; 
+    z-index: -1; 
+} 
+.hero__body{ 
+    max-width: 540px; 
+} 
+.hero__title{ 
+    font-size: var(--heading-size); 
+    font-weight: var(--medium-weight); 
+    line-height: 66px; 
+    margin-bottom: 20px; 
+} 
+.hero__desc{ 
+    font-size: var(--subheading-size); 
+    line-height: 30px; 
+    margin-bottom: 70px; 
+} 
+.hero__actions{ 
+    display: flex; 
+} 
+.hero__btn{ 
+    margin-right: 30px; 
+    width: 190px; 
+    height: 36px; 
+} 
+.overall{ 
+    padding: 110px 0; 
+} 
+.overall__body{ 
+    display: flex; 
+    align-items: center; 
+    margin: 0 -15px; 
+} 
+.overall__col{ 
+    padding: 0 15px; 
+    flex-basis: 50%; 
+} 
+.overall__heading-content{ 
+    margin-bottom: 80px; 
+} 
+.overall__title{ 
+    font-size: var(--section-header-size); 
+    line-height: 48px; 
+    margin-bottom: 1rem; 
+} 
+.overall__desc{ 
+    font-size: var(--main-size); 
+    line-height: 26px; 
+} 
+.overall__cards-content{ 
+    display: flex; 
+} 
+.overall__cards-col{ 
+    flex-basis: 50%; 
+    padding: 0 15px; 
+} 
+.overall__cards-info::before{ 
+    content: url("../img/Icon.svg"); 
+    display: inline-block; 
+    margin-bottom: 14px; 
+} 
+.overall__cards-title{ 
+    font-size: var(--main-size); 
+    line-height: 26px; 
+    margin-bottom: 6px; 
+} 
+.overall__cards-desc{ 
+    font-size: var(--card-size); 
+    color: rgba(93, 105, 112, 1); 
+}

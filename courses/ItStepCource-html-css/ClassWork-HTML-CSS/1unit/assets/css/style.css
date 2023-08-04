@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Nunito+Sans:wght@200;400;900&family=Pacifico&display=swap');
+
+body{
+    font-weight: 100;
+    font-family: 'Pacifico', cursive;
+}
+h1{
+    text-align: center;
+    color: rgba(115, 255, 0, 50%);
+    border: 3px solid rgba(115, 255, 0, 50%);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+p{
+    font-family: 'Comfortaa', cursive;
+    font-size: 24px; /*размер текста*/
+    line-height: 40px;
+    text-decoration: rgb(255, 0, 0)underline; /*подчеркивание*/
+    text-decoration: rgb(255, 0, 0)line-through;   /*зачеркивание*/
+    text-decoration: rgb(255, 0, 0)overline;  /*над текстом*/
+    /*wawy, bouble, dashed, dotted, solid - виды подчеркивания*/
+}
+.text1{
+    color: darkblue;
+    letter-spacing: 10px; /*расстояние между буквами*/
+    word-spacing: 10px; /*расстояние между словами*/
+}
+
+a{
+    font-weight: 100;/*жирность*/
+    font-family: 'Comfortaa', cursive;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;/*при новедении подчеркивание*/
+}
+span{
+    color: cornflowerblue;
+    font-weight: 900;
+}

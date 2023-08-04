@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-weight: 900;
+    color: white;
+}
+
+.grid-container{
+    justify-content: space-between;
+    background-color: goldenrod;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-auto-flow: row;
+}
+
+.grid-element{
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.grid-element:nth-child(odd){
+    background-color: rgb(57, 57, 155);
+}
+.grid-element:nth-child(even){
+    background-color: rgb(91, 49, 160);
+}

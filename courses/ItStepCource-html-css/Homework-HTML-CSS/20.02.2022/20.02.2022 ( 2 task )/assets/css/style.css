@@ -1,0 +1,55 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.menu{
+    width: 300px;
+}
+.menu__link{
+    display: flex;
+    align-items: center;
+    background-color: rgb(184,184,184);
+    color: white;
+    padding: 20px 40px;
+    transition: .4s;
+}
+.menu__link:hover{
+    background-color: rgb(148,148,148);
+}
+.menu__link::before{
+    content: "";
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background-position: 0 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+.edit::before{
+    background-image: url(../img/edit.png);
+}
+.fav::before{
+    background-image: url(../img/favorites.png);
+}
+.hist::before{
+    background-image: url(../img/history.png);
+}
+.set::before{
+    background-image: url(../img/settings.png);
+}
+.sec::before{
+    background-image: url(../img/security.png);
+}

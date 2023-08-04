@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+body {
+    font-family: sans-serif;
+}
+th {
+    padding: 15px;
+    border: 1px solid black;
+}
+table {
+    margin-top: 50px;
+    max-width: 1110px;
+    border-collapse: collapse;
+    text-align: center;
+}
+.sec {
+    border-left: none;
+}
+tr td {
+    border: 1px solid black;
+    padding: 10px;
+}
+.kursive {
+    font-style: italic;
+}
+.weight {
+    font-weight: 700;
+}
+.small {
+    padding: 5px;
+    text-align: left;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+.yellow {
+    background-color: rgb(255,240,162);
+}
+.purple {
+    background-color: rgb(209,209,255);
+}
+.red {
+    background-color: rgb(255,194,194);
+}
+.green {
+    background-color: rgb(178,255,209);
+}
+.pink {
+    background-color: rgb(255,194,255);
+}

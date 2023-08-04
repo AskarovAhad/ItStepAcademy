@@ -1,0 +1,70 @@
+/* не получилось правильно разместить аватарку и скрыть горизонтальный скролл в табличках */
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    overflow-y: scroll;
+    background-color: rgb(1,158,158);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header{
+    background:rgb(0,139,139);
+    width: 100%;
+}
+
+.container{
+    display: inline-flex;
+    justify-content: flex-start;
+
+}
+
+.title{
+    border-radius: 5px;
+    padding: 15px 15px;
+    width: 400px;
+    height: 600px;
+    background-color: rgb(220,220,220);
+    margin-right: 25px;
+    /* overflow-y: hidden; не получилось скрыть гозтзонтальный скролл*/
+    overflow-x: scroll;
+}
+
+.task{
+    font-size: medium;
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.icon-block{
+    display: flex;
+    margin-top: 20px;
+}
+.icon{
+    margin-top: 3px;
+    margin-left: 20px;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;    
+}
+.icon:first-child{
+    margin: 3px 0 0 0;
+}
+.icon:last-child{
+    margin-top: -5px;
+    width: 35px;
+    height: 35px;
+    margin-right: 100px;
+
+}
+.icon-txt{
+   margin: 0;
+}

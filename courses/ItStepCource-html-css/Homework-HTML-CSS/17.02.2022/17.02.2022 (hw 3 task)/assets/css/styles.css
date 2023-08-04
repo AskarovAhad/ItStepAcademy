@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+dt{
+    padding: 10px;
+    font-style:italic;
+}
+
+p{
+    margin-bottom: -8px;
+}
+
+ol{
+    list-style-position:outside;
+    margin-left: 50px;
+}
+
+li{
+    margin-bottom: 15px;
+}
+
+dd{
+    margin: 0px;
+}
+
+.synonims{
+    color: purple;
+}
+
+.quotes{
+    color: gray;
+}

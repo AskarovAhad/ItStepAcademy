@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.137);
+    font-family:sans-serif;
+}
+
+.links{
+    border: 2px solid black;
+    width: 300px;
+}
+
+.links p{
+    text-align: center;
+}

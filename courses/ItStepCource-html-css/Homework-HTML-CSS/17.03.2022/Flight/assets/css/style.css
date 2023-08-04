@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    background-color: hsl(0, 0%, 96%);
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+p, span{
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    display: flex;
+    width: 1000px;
+    flex-direction: column;
+}
+.list{
+    display: flex;
+}
+form{
+    width: 100%;
+}
+
+/* header */
+
+.header__container{
+    height: 100px;
+    background-color: #0f4371;
+}
+.header__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+.header__title{
+    display: flex;
+    font-weight: 500;
+    font-size: x-large;
+}
+.header__item{
+    padding-right: 15px;
+    font-size: smaller;
+}
+.header__item:last-child{
+    list-style: '/';
+    padding-left: 10px;
+}
+.header__link{
+    color: white;
+}
+
+/* main */
+
+.main__form{
+    margin-bottom: 20px;
+}
+
+.first-row__list{
+    padding: 20px 0;
+}
+#round-trip{
+    margin-left: 20px;
+}
+
+
+.second-row{
+    display: flex;
+}
+.second-row input, 
+.second-row select{
+    width: 140px;
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.second-row input::placeholder{
+    padding-left: 15px;
+}
+#submit{
+    margin: 0;
+    color: white;
+    background-color: #0f4371;
+}
+
+
+.main__center{
+    display: flex;
+}
+.main__filter{
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    padding: 25px;
+    border: 1px solid lightgray;
+}
+.subtitle{
+    padding: 25px 0 15px 0;
+    color: #0f4371;
+}
+.main__num-of-stops__list{
+    flex-direction: column;
+}
+
+
+.main__list-price input[type="number"]{
+    width: 60px;
+}
+
+
+.main__list-airlines{
+    flex-direction: column;
+}
+.main__list-airlines .item{
+    padding-bottom: 5px;
+}
+.main__list-airlines .item:last-child{
+    padding: 0;
+}
+
+
+.main__flights{
+    width: 725px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    border: 1px solid lightgray;
+}
+.main__flights h3{
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+}
+
+.main__list-desc{
+    flex-direction: column;
+}
+.main__list-desc h5{
+    padding: 0;
+}
+.desc__item{
+    display: flex;
+    flex-direction: column;
+}
+.list__gray{
+    display: flex;
+    border: 1px solid lightgray;
+    background-color: hsl(0,0%,93%);
+}
+.list__white{
+    display: flex;
+    padding: 10px 0;
+    border: 1px solid lightgray;
+}
+.list__gray li,
+.list__white li{
+    display: inline-flex;
+    width:120.5px;
+    height: 33px;
+    justify-content: center;
+    align-items: center;
+}
+.list__white li{
+    flex-direction: column;
+    height: 58px;
+    justify-content: space-around;
+}
+
+#book{
+    width: 90px;
+    height: 40px;
+    background-color: #0f4371;
+    color: white;
+    border-radius: 10px;
+}
+.button__link{
+    color: #0f4371;
+    text-align: center;
+}

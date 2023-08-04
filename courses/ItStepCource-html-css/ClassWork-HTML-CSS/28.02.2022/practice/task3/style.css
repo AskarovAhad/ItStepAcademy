@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 255, 0);
+}
+h1{
+    text-align: center;
+}
+.calc,
+.book,
+.paper,
+.pallete{
+    position: relative;
+    margin-right: 15px;
+    width: 90px;
+    height: 90px;
+}
+.block{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.calc{
+    transform: rotate(-25deg);
+    animation: move 1.5s linear 0s 1;
+}
+.book{
+    transform: rotate(-15deg);
+    animation: move 1.5s linear 0.5s 1;
+}
+.paper{
+    transform: rotate(15deg);
+    animation: move 1.5s linear 1s 1 ;
+}
+.pallete{
+    transform: rotate(25deg);
+    animation: move 1.5s linear 1.5s 1;
+}
+.pencill{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    animation: move 1.5s linear 2s 1;
+}
+.pencill img{
+    transform: rotate(90deg);
+}
+
+@keyframes move{
+    from{
+        top:100vh
+    }
+    to{
+        top: 0;
+    }
+}

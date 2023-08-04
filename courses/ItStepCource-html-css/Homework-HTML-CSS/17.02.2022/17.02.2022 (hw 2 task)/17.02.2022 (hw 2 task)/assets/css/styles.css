@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+h2{
+    font-weight: 900;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+    list-style-position: inside;
+}
+ul li{
+    padding: 15px 30px;
+}
+.dark{
+    background-color: rgb(165,205,218);
+}
+.light{
+    background-color: rgb(173,216,231);
+}
+.gray{
+    text-decoration-line:line-through ;
+    background-color: rgb(226,226,226);
+}
+.checked{
+    list-style-image: url(../img/icons/checked_16.png);
+}
+.unchecked{
+    list-style-image: url(../img/icons/unchecked_16.png);
+}
+ul li::after{
+    content: "\2A09";
+    color: red;
+    margin-left: 24px;
+}
+ul li span{
+    padding: 0 15px
+}

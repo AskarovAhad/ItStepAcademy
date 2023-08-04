@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap');
+h1{
+    font-size: 65px;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    color: rgb(250, 0, 0, 100%);
+}
+h2{
+    font-size: 35px;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    color: aquamarine;
+}
+h3{
+    font-size: 25px;
+    font-family: 'Comfortaa', cursive;
+    color: blueviolet;
+    
+}
+p{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.djudores{
+    color: rgb(0, 117, 250);
+text-decoration: underline;
+}
+.book{
+    color: rgb(250, 0, 0, 100%);
+    text-decoration: underline;
+}
+.pch3{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Comfortaa', cursive;
+    color: blueviolet;
+}
+.fpcconfig{
+    color: rgb(0, 255, 221);
+}
+.spcconfig{
+    color: rgb(0, 255, 221);
+}
+.games{
+    color: rgb(139, 67, 0);
+    text-decoration: underline;
+}
+.onlinegames{
+    color: rgb(139, 67, 0);
+    text-decoration: underline;
+}
+.nowgame{
+    color: rgb(115, 0, 247);
+    text-decoration: underline;
+}
+.familyspan{
+    text-decoration: underline;
+    color: rgb(196, 207, 255);
+}

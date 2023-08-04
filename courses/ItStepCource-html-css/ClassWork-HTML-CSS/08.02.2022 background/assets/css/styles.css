@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+p{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.container{
+    max-width: 1240px;
+    margin: auto;
+}
+
+h1{
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.block{
+    height: 90vh;
+    margin-bottom: 5vh;
+}
+
+.box{
+    height: 100%;
+    border: 2px solid gray;
+}
+
+.example-1{
+    background-image: url("../img/bg/abstract-bg.jpg");
+    background-repeat: no-repeat; 
+}
+
+.example-2{
+    background-image: url("../img/bg/photo-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  /*x y*/
+}
+
+.example-3{
+    background-image: url(../img/bg/photo-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -600px 0px;
+}
+
+.example-4{
+    background-image: url(../img/bg/sky-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.example-5{
+   background-size: 200% 200%;
+   background-position: calc(100% + 200px) calc(100% + 200px);
+   background-repeat: no-repeat;
+    background-image: linear-gradient(135deg, aqua, 
+    rgb(251, 255, 1));
+    transition: 0.5s;
+}
+.example-5:hover{
+    background-position: 0 0;
+}
+
+
+.example-6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-size: 20vw;
+    text-transform: uppercase;
+    letter-spacing: -1vw;
+    font-weight: 900;
+    /* background-image: url(../img/bg/sky-bg.jpg); */
+    background-image: linear-gradient(110deg, black 40%, red 40%, red 45% ,black 60%);
+    background-size: 500%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+}
+.title:hover{
+    animation: moveGradient 7s linear infinite normal; 
+}
+@keyframes moveGradient{
+    0%{
+        background-position: -300%;
+    }
+    100%{
+        background-position: 300%;
+    }
+}
+

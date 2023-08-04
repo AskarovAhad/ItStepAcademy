@@ -1,0 +1,19 @@
+.body{
+    font-family: sans-serif;
+}
+.red{
+    color: tomato;
+    background-color: rgba(128, 128, 128, 0.288);
+    font-size: 40px;
+    padding: 4px 8px;
+    margin: 2px;
+    border: 4px;
+}
+.black{
+    color: black;
+    background-color: rgba(128, 128, 128, 0.288);
+    font-size: 40px;
+    padding: 4px 8px;
+    margin: 2px;
+    border: 4px;
+}

@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.footer{
+    background-color: rgb(41,79,110);
+    padding: 100px 0;
+}
+.footer__container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.footer__content{
+    display: flex;
+    padding: 0 100px;
+}
+.footer__column{
+    flex-basis: 40%;
+}
+.footer__column:last-child{
+    flex-basis: 20%;
+}
+.footer__socials{
+    display: flex;
+}
+.footer__social-link{
+    display: flex;
+    width: 48px;
+    height: 48px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: .3s;
+    margin-right: 15px;
+}
+.fb{
+    background-image: url(/assets/img/fb_gray.png);
+}
+.fb:hover{
+    background-image: url(/assets/img/fb.png);
+}
+.insta{
+    background-image: url(/assets/img/insta_gray.png);
+}
+.insta:hover{
+    background-image: url(/assets/img/insta.png);
+}
+.yt{
+    background-image: url(/assets/img/youtube_gray.png);
+}
+.yt:hover{
+    background-image: url(/assets/img/youtube.png);
+}
+.footer__socials-link-span{
+    padding: 50px 15.5px;
+}
+
+.footer__container::after{
+    margin: 20px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: .5px;
+    background-color: white;
+}
+
+.footer__copyright{
+    text-align: center;
+}
+
+@media screen and (max-width: 769px) {
+    .footer__content{
+        flex-wrap: wrap;
+    }
+    .footer__column{
+        flex-basis: 50% ;
+        margin-bottom: 20px;
+    }
+    .footer__column:last-child{
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+}
+
+@media screen and(max-width: 576px) {
+    .footer__content{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .footer__socials-link-span{
+        padding: 20px 0;
+        font-size: 1.5rem;
+    }
+    .footer__social-link{
+        width:45px;
+        height: 45px;
+    }
+    .footer{
+        padding: 20px 0;
+    }
+}

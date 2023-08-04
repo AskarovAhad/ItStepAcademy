@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    font-family: sans-serif;
+    background-color: #e45d44;
+    justify-content: center;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    width: 500px;
+    height: 500px;
+    margin: 200px 0 50px 0;
+    background-color: #e6e4e4;
+    box-shadow: 0 0 30px 3px black;
+}
+.box__title{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 70px 0;
+}
+.box__list{
+    display: flex;
+    flex-direction: column;
+}
+.box__item{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+input[type="email"],
+input[type="password"],
+input[type="submit"]{
+    width: 400px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    font-weight:bolder;
+    font-size: larger;
+}
+input::placeholder{
+    color: #c7c6c6;
+}
+input[type="submit"]{
+    background-color: #32a75a;
+    color: white;    
+    cursor: pointer;
+}
+.box__link{
+    color: #e45d44;
+    font-weight: bolder;
+    font-size: larger;
+    padding-top: 20px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+}
+.links__text,
+.links__btns{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: x-large;
+}
+.links__btns{
+    padding-top: 50px;
+    justify-content: space-between;
+}
+.links__btns a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 50px;
+    color: white;
+}
+.links__btns a::before{
+    content: "";
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.links__fb{
+    background-color: #3a5ba0;
+}
+.links__tw{
+    background-color: #1cb7eb;
+}
+.links__fb::before{
+    width: 2.1rem;
+    height: 2.1rem;
+    margin-right: 20px;
+    padding-bottom: 15px;
+    background-image: url(../img/icons8-facebook.svg);
+}
+.links__tw::before{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 20px;
+    background-image: url(../img/icons8-twitter.svg);
+}
